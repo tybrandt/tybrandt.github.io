@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<!-- JS -->
+
+<!-- MAIN CSS STYLE SHEET -->
+<!-- <link rel="stylesheet" type="text/css" href="style/style.css"> -->
+<!-- MEDICATION CSS STYLE SHEET -->
+<link rel="stylesheet" type="text/css" href="style/medication.css">
+<!-- JOURNAL/NAVBAR CSS STYLE SHEET -->
+<!-- <link rel="stylesheet" type="text/css" href="style/journal.css"> -->
+
+<!-- HTML -->
+<html>
+
+<head>
+    <!-- <link href="style/breathe.css" rel="stylesheet" /> -->
+    <title>Medications</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=DM+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="style/medication.css" rel="stylesheet" /> -->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img class='logo' src='img/quokka.svg' height='80px' />
+        <div class="buttons">
+            <a class="button btn-info" href="index.html">Journal</a>
+            <a class="button btn-info" href="breathe.html">Breathing Exercises</a>
+            <a class="button btn-warning" href="medications.html">Medications</a>
+            <a class="button btn-info" href="cal.html">Mood Calendar</a>
+            <a class="button btn-info" id="CAP" href="https://caps.umich.edu/">Contact Caps</a>
+            <p>
+                <script> document.write(new Date().toLocaleDateString()); </script>
+            </p>
+        </div>
+    </div>
+
+    <div id="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <div class='outer-container'>
+        <h1>Current Medications</h1>
+        <div class="table-area">
+            <table class="table" style="width:auto;">
+                <tr>
+                    <th>Medication Name</th>
+                    <th>Time of dose</th>
+                    <th>Notes</th>
+                    <th>Taken?</th>
+                </tr>
+                <tr>
+                    <td>💊 Example A</td>
+                    <td>9 AM</td>
+                    <td>Nope</td>
+                    <td>
+                        <input type="button" value="Yes" class="button button2 btn">
+                    </td>
+                    <td>
+                        <input type="button" value="delete?" class="button button1" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+                <tr>
+                    <td>💊 Example B</td>
+                    <td>9 AM</td>
+                    <td></td>
+                    <td>
+                        <input type="button" value="No" class=" button button3 btn">
+                    </td>
+                    <td>
+                        <input type="button" value="delete?" class="button button1" onclick="deleteRow(this)">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <p>Add Medication: </p>
+        <div id="data">
+            <input type="text" id="name" placeholder="Enter Medication name" style="width:200px">
+            <input type="time" id="time" placeholder="Enter Time of dosage">
+            <input type="text" id="notes" placeholder="Notes">
+            <select id="taken">
+                <option value="Taken">Taken</option>
+                <option value="Not Taken">Not Taken</option>
+            </select>
+            <button onclick="addRow()">Add</button>
+        </div>
+    </div> <!-- end active-window -->
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/medication-script.js"></script>
+    </div> <!-- end outer-container -->
+</body>
+
+</html>

@@ -1,0 +1,98 @@
+html * {
+    background-color: #414584;
+    font-size: 24px;
+    margin: 0px;
+    font-family: "Coming Soon", cursive;
+}
+body {
+    margin: 0px;
+}
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+.carousel-caption.d-none.d-md-block {
+    border-radius: 10px;
+}
+.carousel-indicators {
+    border-radius: 10px;
+}
+ol {
+    width: 80%;
+    margin-left: 10%;
+    text-align: left;
+}
+button span {
+    border-radius: 5px;
+}
+.btn.btn-info {
+    border: none;
+    width: auto;
+    margin: 5px;
+}
+.navbar.navbar-expand-lg.navbar-dark {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    width: 100vw;
+}
+#links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    margin-left: 10px;
+}
+.tool {
+    margin: 10px;
+}
+.tool img {
+    height: 40px;
+    width: auto;
+}
+.navbar.navbar-expand-lg.navbar-dark span {
+    color: white;
+    height: 30px;
+}
+#ambience {
+    width: 35%;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: right;
+    align-items: center;
+    margin-right: 10px;
+}
+#ambience * {
+    margin-right: 10px;
+}
+.carousel-caption {
+    max-height: calc(100% - 110px);
+    overflow-y: auto;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #845225;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #888888; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555555;
+    border-radius: 10px;
+}
+.buttons {
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+}

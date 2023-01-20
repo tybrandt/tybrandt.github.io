@@ -1,0 +1,51 @@
+
+/* styling the webpage */
+.outer-container {
+    height: 100%;
+    width: 100%;
+    background: rgb(105, 151, 236);
+    /*border: 5% solid rgb(105, 151, 236);*/
+  }
+  .toolbar {
+    height: 100%;
+    width: 20%;
+    background: rgb(231, 236, 152);
+    /*border-right: 3px solid rgb(105, 151, 236);*/
+    float: left;
+    position: relative;
+  }
+
+  .active-window {
+    height: 95%;
+    width: 75%;
+    /*background: rgb(164, 248, 147);*/
+    float: right;
+    position: relative;
+    z-index: 3;
+    justify-content: center;
+  }
+
+  #tools{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tool{
+    flex:1;
+    padding:5%;
+  }
+
+  .journal_entry{
+      font-size: large;
+  }
+
+  #moodForm{
+      align-content: left;
+  }
+
+  #j_entry{
+      width:55%;
+      height:55%;
+  }
+  

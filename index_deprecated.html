@@ -1,0 +1,77 @@
+<!--mental health website -->
+<html>
+
+<!-- JS -->
+<script src='scripts/jquery.min.js'></script>
+<script src='scripts/index.js'></script>
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="style/style.css">
+
+<!-- HTML -->
+<body>
+  <div class='outer-container'>
+
+    <div class='toolbar'>
+      <div id="tools">
+
+        <div id='journal' class='tool'>
+            <img class='icon' src='img/pen-vector-png-34.png' height='80px'/> 
+        </div>
+
+        <div id='mood' class='tool'>
+            <img class='icon' src='img/mood.png' height='80px'/> 
+        </div>
+
+        <div id='meds' class='tool'>
+            <img class='icon' src='img/pill.png' height='80px'/> 
+        </div>
+
+        <div id='breathe' class='tool'>
+          <a href="breathe.html"><img class='icon' src='img/breathe.png' height='80px'/></a>
+        </div>
+
+        <div id='calendar' class='tool'>
+            <a href="/cal.html"><img class='icon' src='img/cal.png' height='80px'/></a> 
+        </div>
+
+      </div>
+    </div> <!-- end toolbar -->
+
+    <div class='active-window' style='text-align: center'>
+
+        <div class = 'mood_survey'>
+            
+            <form action="/cal.html" id="moodform">
+                <h3>Today's Journal</h3>
+                <textarea id="j_entry" form="moodform" name ='entry'></textarea><br>
+                <h3>On a rating of 1-7, how were you feeling today?</h3>
+                <input type="radio" name="mood" value="7">  
+                <label for="7">7 (Very Happy)</label><br>
+                <input type="radio" name="mood" value="6">  
+                <label for="6">6 (Quite Happy)</label><br>
+                <input type="radio" name="mood" value="5">  
+                <label for="5">5 (Happy)</label><br>
+                <input type="radio" name="mood" value="4">  
+                <label for="4">4 (Okay)(</label><br>
+                <input type="radio" name="mood" value="3">  
+                <label for="3">3 (Unhappy)</label><br>
+                <input type="radio" name="mood" value="2">  
+                <label for="2">2 (Quite Unhappy)</label><br>
+                <input type="radio" name="mood" value="1">  
+                <label for="1">1 (Very Unhappy)</label><br>
+                <input type="radio" name="mood" value="other">  
+                <label for="other">Other</label>
+                <input type="text" name ="moodtext" placeholder="How Are You Feeling"><br>
+                <button type="submit" value="Submit" id="submit" >Submit</button>
+            </form>
+        </div>
+
+
+
+    </div> <!-- end active-window -->
+
+  </div> <!-- end outer-container -->
+</body>
+
+</html>
